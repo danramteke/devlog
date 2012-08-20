@@ -3,7 +3,7 @@ layout: default
 published: true
 ---
 
-# How does it work?
+# Sublime Text Keymappings
 
 Made some keymappings in Sublime Text 2.
 
