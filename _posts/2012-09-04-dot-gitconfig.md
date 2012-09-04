@@ -1,6 +1,6 @@
 ---
 layout: default
-published: false
+published: true
 ---
 
 Here is the alias section of my ~/.gitconfig 
