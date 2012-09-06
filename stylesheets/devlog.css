@@ -100,8 +100,16 @@ footer, .signoff {
 	border-bottom: 1px #00235D solid;
 }
 
+
+/*@media only screen and (min-width: 481px) and (max-width : 768px) {
+	.post p:not(.signoff), .post .gist, h1, .tagline {
+		width: 400px;
+		
+	}
+}
+*/
 @media only screen and (min-width : 769px) {
-	.post p:not(.signoff), .post .gist{
+	.post p:not(.signoff), .post .gist, h1, .tagline {
 		width: 768px;
 		margin: 0 auto;
 	}
