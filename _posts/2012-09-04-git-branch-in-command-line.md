@@ -14,7 +14,7 @@ A colorblind version is forthcoming.
 
 
     function parse_git_branch () {
-       git status -b --porcelain | head -1 | sed -e 's/## //'
+       git status -b --porcelain 2> /dev/null | head -1 | sed -e 's/## //'
     }
 
     function parse_git_status () {
