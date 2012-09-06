@@ -59,6 +59,10 @@ div.post {
 	margin-bottom: 50px;
 }
 
+pre .line {
+	font-family: 'Bitstream Vera Sans Mono', "Courier New", monospace;
+}
+
 div.post_title {
 	font-size: 1.3em;
 	background-color: #C3FFBE;
@@ -72,7 +76,7 @@ div.post_title {
 	border-bottom: 1px #00235D solid;
 }
 
-a{
+a {
 	color: black;
 	text-decoration: none;
 }
