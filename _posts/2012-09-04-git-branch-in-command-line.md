@@ -14,7 +14,7 @@ A colorblind version is forthcoming.
 
 
     function parse_git_branch () {
-       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+       git status -b --porcelain | head -1 | sed -e 's/## //'
     }
 
     function parse_git_status () {
@@ -29,4 +29,4 @@ A colorblind version is forthcoming.
     	fi
     }
 
-    export PS1="$GREEN\u$NO_COLOUR:\w\$(parse_git_status)\$(parse_git_branch)$NO_COLOUR\$ "
+    export PS1="$GREEN\u$NO_COLOUR:\w\$(parse_git_status) (\$(parse_git_branch))$NO_COLOUR\$ "
