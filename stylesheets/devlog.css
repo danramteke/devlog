@@ -5,3 +5,7 @@ div.post {
 div.post_title {
 	font-size: large;
 }
+
+.gist .line {
+	color: black;
+}
