@@ -103,5 +103,6 @@ footer, .signoff {
 @media only screen and (min-width : 769px) {
 	.post p:not(.signoff), .post .gist{
 		width: 768px;
+		margin: 0 auto;
 	}
 }
