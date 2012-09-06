@@ -3,7 +3,6 @@ layout: default
 published: true
 ---
 
-Here is the alias section of my ~/.gitconfig 
+Here is a sweet pretty log that I found somewhere in my ~/.gitconfig 
 
-
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+<script src="https://gist.github.com/3658683.js?file=.gitconfig"> </script>

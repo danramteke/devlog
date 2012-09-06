@@ -6,6 +6,16 @@ div.post_title {
 	font-size: large;
 }
 
+
+div.gist {
+	margin-right: -20px;
+	margin-left: -20px;
+}
 .gist .line {
 	color: black;
+}
+
+.post{
+	padding-bottom: 30px;
+	border-bottom: solid black 1px;
 }
