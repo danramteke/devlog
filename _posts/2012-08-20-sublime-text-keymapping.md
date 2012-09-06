@@ -9,11 +9,7 @@ Open the keymap files by going to "Sublime Text 2" > "Preferences" > "Key Bindin
 
 This is what my key bindings file looks like:
 
-    [
-    { "keys": ["super+shift+c"], "command": "copy_path" },
-    { "keys": ["super+shift+1"], "command": "reveal_in_side_bar"},
-    { "keys": ["super+alt+l"], "command": "reindent", "args": {"single_line": false}}
-    ]
+<script src="https://gist.github.com/3658683.js?file=Default (OSX).sublime-keymap"> </script>
     
 I opened up the Sublime Text 2 packages directories in Sublime Text 2, and search for the commands I wanted to add key bindings to. The names aren't always obvious. 
 

@@ -22,7 +22,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Palatino", sans-serif;
+  font-family: "Mate", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -68,7 +68,7 @@ div.post_title {
 	margin-right: -20px;
 	margin-bottom: 20px;
 	
-	border-bottom: 1px black solid;
+	border-bottom: 1px #00235D solid;
 }
  a{
 	color: black;
@@ -85,7 +85,7 @@ h1 {
 	font-size: 18pt;
 }
 
-footer {
+footer, .signoff {
 	background-color: #FFDCFF;
 	color: #5C0023;
 	padding-top: 10px;
@@ -94,7 +94,7 @@ footer {
 	margin-left: -20px;
 	margin-right: -20px;
 	margin-bottom: 20px;
-	border-bottom: 1px black solid;
+	border-bottom: 1px #00235D solid;
 }
 
 div.gist {
