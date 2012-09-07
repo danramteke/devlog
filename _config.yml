@@ -2,5 +2,5 @@ safe:        true
 auto:        true
 server:      true
 paginate:    1
-BASE_PATH:	 /devlog
+base-url:	 /devlog
 permalink:   :year-:month-:day/:title.html
