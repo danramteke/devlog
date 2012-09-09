@@ -3,7 +3,9 @@ layout: default
 published: true
 ---
 
-Here's the script I got passed down from who knows where on how to show the git branch in the command prompt. I've improved it by coloring the branch name. RED means there are unstaged changes. YELLOW means the working directory and index match. And GREEN means working directory is clean (nothing to commit).
+Here's a script to show the git branch in the command prompt. I color the git branch to quickly show thestate of the working directory. RED means there are unstaged changes. YELLOW means the working directory and index match. And GREEN means working directory is clean (nothing to commit).
+
+This is known to work with git version 1.7.12. However, git version 1.7.6.4 doesn't properly support the `-b` flag with the `--porcelain` flags.
 
 
 <script src="https://gist.github.com/3658683.js?file=.bash_login"> </script>
