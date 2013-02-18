@@ -59,6 +59,10 @@ div.post {
 	margin-bottom: 50px;
 }
 
+div.post p {
+	padding-bottom: 15px;
+}
+
 pre .line {
 	font-family: 'Bitstream Vera Sans Mono', "Courier New", monospace;
 }
