@@ -3,7 +3,7 @@ layout: default
 published: false
 ---
 
-# How does it work?
+# Limiting Xcode Docs Searches
 
 Xcode searches all available documentation sets by default. This is annoying when developing for the latest version of iOS, and a result comes back from every previous documentation set. 
 
