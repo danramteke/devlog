@@ -8,7 +8,8 @@ Here's a script to show the git branch in the command prompt. I color the git br
 This is known to work with git version 1.7.12. However, git version 1.7.6.4 doesn't properly support the `-b` flag with the `--porcelain` flags.
 
 
-<script src="https://gist.github.com/3658683.js?file=.bash_login"> </script>
+
+<script src="https://gist.github.com/danramteke/3658683.js?file=.bash_login"> </script>
 
 RED, YELLOW, GREEN, and NO_COLOUR are color settings.
 
