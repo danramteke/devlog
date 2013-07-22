@@ -3,4 +3,4 @@ auto:        true
 server:      true
 paginate:    1
 base-url:    /devlog
-permalink:   :year-:month-:day/:title.html
+permalink:   /devlog/:year-:month-:day/:title.html
