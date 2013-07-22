@@ -110,7 +110,7 @@ footer, .signoff {
 
 code {
 	font-family: "Menlo", monospace;
-	background-color: white;
+	background-color: #eee;
 	font-size: 0.9em;
 	color: #555;
 }
