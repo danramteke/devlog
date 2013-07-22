@@ -6,11 +6,7 @@ layout: default
 
 
 {% for post in site.posts limit:5 %}
-  <div class="post">
-  <div class="post_title"><a href="/devlog/{{ post.url }}">{{post.title}}</a></div>
+
   {{ post.content }}
-  <p class="signoff">
-    {{ post.date | date: "%b %d, %Y" }}
-  </p>
-  </div>
+
 {% endfor %}
