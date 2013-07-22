@@ -108,6 +108,11 @@ footer, .signoff {
 	border-bottom: 1px #00235D solid;
 }
 
+code {
+	font-family: "Menlo", monospace;
+	background-color: white;
+}
+
 @media only screen and (min-width : 769px) {
 	.post p:not(.signoff), .post .gist, h1, .tagline {
 		width: 768px;
