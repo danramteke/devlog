@@ -112,6 +112,7 @@ code {
 	font-family: "Menlo", monospace;
 	background-color: white;
 	font-size: 0.9em;
+	color: #333;
 }
 
 @media only screen and (min-width : 769px) {
