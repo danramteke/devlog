@@ -1,6 +1,6 @@
 ---
 title: Introducing DRAutolayout
-layout: default
+layout: post
 published: true
 ---
 

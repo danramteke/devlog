@@ -6,7 +6,8 @@ layout: default
 
 
 {% for post in site.posts limit:5 %}
-  <div class="post_title"><a href="/devlog/{{ post.url }}">{{post.title}}</a></div>
+  <div class="post_title"><a href="/devlog{{ post.url }}">{{post.title}}</a></div>
+
   {{ post.content }}
 
 
