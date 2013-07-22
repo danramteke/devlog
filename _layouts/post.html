@@ -29,18 +29,17 @@
         <p class="tagline">Development Notes</p>
 
         <div id="main" role="main">
+            <article class="markdown-body">
 
-            <div class="post">
-                <div class="post_title"><a href="/devlog{{ page.url }}">{{page.title}}</a></div>
-                <article class="markdown-body">
-                    {{ page.content }}
-                </article>
+                <div class="post">
+                    <div class="post_title"><a href="/devlog{{ post.url }}">{{post.title}}</a></div>
+                    {{content}}
+                    <p class="signoff">
+                        {{ post.date | date: "%b %d, %Y" }}
+                    </p>
 
-                <p class="signoff">
-                    {{ page.date | date: "%b %d, %Y" }}
-                </p>
-            </div>
-
+                </div>
+            </article>
         </div>
     </div>
     <footer>
