@@ -1,22 +1,7 @@
-At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. We did quite a bit of work prepping for this proposal. Here are our notes:
+At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. We did quite a bit of work prepping for this proposal. I'll give some background to the project and client, describe what we did, and give some recommendations.
 
-Background
-What we did
-What we recommended
-
-
-A little background on the proposal. The client already had a pure Objective-C code base. And a live app in the app store. They already had a design firm and a consulting firm that they had a a good working relationship with. They were Rails developers, curious about how RubyMotion could benefit them. If the project were in Ruby, they could understand the code better, and feel confident that they were paying for quality code. 
-
-
-
-
-
-
-
-
-
-
-
+First, a little background on the proposal. The client already had a pure Objective-C code base. And a live app in the app store. They already had a design firm and a consulting firm that they had a a good working relationship with. They were Rails developers, curious about how RubyMotion could benefit them. If the project were in Ruby, they could understand the code better, and feel confident that they 
+were paying for quality code. 
 
 Because this potential client was a small Rails shop, they only had time to work on their Rails app. All the mobile work would be done mobile-only developers. When hiring for that role, it made sense to them to hire Objective-C programmers because of the perceived larger pool of Objective-C developers to RubyMotion developers. 
 
