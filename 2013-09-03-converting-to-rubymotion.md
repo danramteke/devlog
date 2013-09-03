@@ -8,14 +8,15 @@ Also, they were pushing new features constantly. Stopping development to transla
 
 
 
-Our strategy for the conversion was to vendor the Objective-C project, convert the application delegate to Ruby, and then pull over one controller at a time until we got everything in Ruby that would be likely to change. We planned to leave in Objective-C all the dropped-in third party libraries. 
-
+Here's what we did. Our strategy for the conversion was to vendor the Objective-C project, convert the application delegate to Ruby, and then pull over one controller at a time until we got everything in Ruby that would be likely to change. We planned to leave in Objective-C all the dropped-in third party libraries. 
 
 We started by vendoring the entire Objective-C project. And already hit some bumps in the road. Because the other dev shop used the `.pch` file (pre-compiled headers file) to require fewer `#import` statements in their files, we couldn't simply drop the entire project in a vendor sub-folder in our RubyMotion project. Further, the cocoapods wouldn't load for the vendored project. Because of all these missing dependencies, we had to take a different route. 
 
 Instead, we built the existing project as a static framework for iOS. This meant we didn't have to fiddle with the `.pch` file, muck with pre-compiler directives, or other dependency shenanigans. This gave us a `.a` file that we put in the vendor directory of our RubyMotion project. (Although we found blog posts describing how to do so, we didn't bother making a `.a` file for both the simulator and the iPhone - we were spiking this out to try to get it to work.) Here is the line from our `Rakefile`
 
-    app.vendor_project('vendor/libclientname-static', :static, :products => ['libclientname-static.a'], :headers_dir => "include/libclientname-static", :force_load => false)
+    app.vendor_project('vendor/libclientname-static', :static, :force_load => false, 
+        :products => ['libclientname-static.a'], 
+        :headers_dir => "include/libclientname-static")
 
 
 
