@@ -1,8 +1,8 @@
-At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. We did quite a bit of work prepping for this proposal. I'll give some background to the project and client, describe what we did, and give some recommendations.
+At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. I'll give some background to the project and client, describe what we did, and give some recommendations.
 
-First, a little background on the proposal. The client already had a pure Objective-C app in the app store. They already had a design firm and a consulting firm that they had a a good working relationship with. They were Rails developers, curious about how RubyMotion could benefit them. 
+First, a little background on the proposal. The client already had a pure Objective-C app in the App Store. They already had a design firm and a consulting firm that they had a a good working relationship with. They were Rails developers, curious about how RubyMotion could benefit them. 
 
-Also, they were pushing new features constantly. Stopping development to translate the app to RubyMotion didn't seem like a good use of their time. We would have been happy to implement new features for them. The other firm writing new features while we were translating the app to RubyMotion seemed like a recipe for continual merge conflicts.
+Also, they were pushing new features constantly. The other firm writing new features while we were translating the app to RubyMotion seemed like a recipe for continual merge conflicts. We would have been happy to implement new features for them. Stopping development to translate the app to RubyMotion didn't seem like a good use of their time.
 
 
 
@@ -20,4 +20,4 @@ Instead, we built the existing project as a static framework for iOS, rememberin
 After translating the application delegate, vendoring the appropriate included frameworks, and setting up the cocoapods, we had a stable foundation to build on. We were able to reference controllers in the storyboard, and instantiate views from the vendored `.a` file.
 
 
-From our learnings from this proposal, converting a project from Objective-C to RubyMotion is doable. It's even doable to translate one class at a time, iteratively, until the project feels right. The cost-to-benefit of stopping to translate an already existing app is very dependent on the environment the app is being developed in. When new features are important, not translating makes sense. If a team of Ruby developers is taking over an app, a translation makes more sense.
+Through this prep work, we discovered that converting a project from Objective-C to RubyMotion is doable. It's even doable to translate one class at a time, iteratively, until the project feels right. The cost-to-benefit of stopping to translate an already existing app is very dependent on the environment the app is being developed in. When new features are important, not translating makes sense. If a team of Ruby developers is taking over an app, a translation makes more sense.
