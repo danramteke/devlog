@@ -2,6 +2,7 @@
 layout: post
 published: true
 ---
+
 At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. I'll give some background to the project and client, describe what we did, and give some recommendations.
 
 First, a little background on the proposal. The client already had a pure Objective-C app in the App Store. They already had a design firm and a consulting firm that they had a a good working relationship with. They were Rails developers, curious about how RubyMotion could benefit them. 
@@ -19,6 +20,7 @@ Instead, we built the existing project as a static framework for iOS, rememberin
     app.vendor_project('vendor/libclientname-static', :static, :force_load => false, 
         :products => ['libclientname-static.a'], 
         :headers_dir => "include/libclientname-static")
+
 
 
 After translating the application delegate, vendoring the appropriate included frameworks, and setting up the cocoapods, we had a stable foundation to build on. We were able to reference controllers in the storyboard, and instantiate views from the vendored `.a` file.
