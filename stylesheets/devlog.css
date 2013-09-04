@@ -29,8 +29,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
+body, p, div,article,h1,h2 {
+  line-height: 135%;
 }
 ol, ul {
   list-style: none;
@@ -60,11 +60,16 @@ div.post {
 }
 
 div.post p {
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 pre .line {
 	font-family: 'Bitstream Vera Sans Mono', "Courier New", monospace;
+}
+
+pre {
+	background-color: #ffffff;
 }
 
 div.post_title {
@@ -92,7 +97,7 @@ h1 {
 
 .tagline {
 	color: #00235D;
-	font-size: 18pt;
+	font-size: 1.3em;
 }
 
 footer, .signoff {
@@ -112,10 +117,11 @@ code {
 	font-family: "Menlo", monospace;
 	font-size: 0.8em;
 	color: #555;
+	background-color:#ffffff;
 }
 
 @media only screen and (min-width : 769px) {
-	.post p:not(.signoff), .post .gist, h1, .tagline {
+	.post p:not(.signoff), .post .gist, h1, .tagline, pre {
 		width: 768px;
 		margin: 0 auto;
 	}
