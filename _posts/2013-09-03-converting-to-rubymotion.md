@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+title: Converting from Objective-C to RubyMotion
 ---
 
 At Cyrus, we recently fielded a proposal to convert an existing app on the App Store from Objective-C to RubyMotion. I'll give some background to the project and client, describe what we did, and give some recommendations.
