@@ -11,8 +11,8 @@ layout: default
   {{ post.content }}
 
 
-	  <p class="signoff">
-	    {{ post.date | date: "%b %d, %Y" }}
+	  <p class="signoff-stripe">
+	    <span class="signoff">{{ post.date | date: "%b %d, %Y" }}</span>
 	  </p>
 
 {% endfor %}

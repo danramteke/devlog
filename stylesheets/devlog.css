@@ -101,7 +101,7 @@ h1 {
 	font-size: 1.3em;
 }
 
-footer, .signoff_stripe {
+footer, .signoff-stripe {
 	margin-top: 10px;
 	background-color: #FFDCFF;
 	color: #5C0023;
@@ -122,11 +122,11 @@ code {
 }
 
 @media only screen and (min-width : 769px) {
-	.post p:not(.signoff_stripe), .post .gist, h1, .tagline, pre, .signoff,  div.post_title a, footer .owner{
+	.post p:not(.signoff-stripe), .post .gist, h1, .tagline, pre,  div.post_title a, .signoff, footer .owner{
 		width: 768px;
 		margin: 0 auto;
 	}
-	div.post_title, p.signoff_stripe, footer { padding-left: 0px; }
+	div.post_title, p.signoff-stripe, footer { padding-left: 0px; }
 	div.post_title a, .signoff {
 			
 		display:block;
