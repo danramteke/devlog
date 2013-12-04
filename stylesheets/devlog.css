@@ -90,6 +90,10 @@ a {
 	color: black;
 }
 
+.post_title a {
+	text-decoration: none;
+}
+
 h1 {
 	color: #00235D;
 	font-size: 3em;
