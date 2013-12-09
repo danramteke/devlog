@@ -1,1 +1,1 @@
-jekyll serve -w -b /devlog/
+jekyll serve -w
