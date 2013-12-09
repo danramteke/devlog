@@ -1,4 +1,4 @@
 safe:        true
 paginate:    1
-base-url:    /devlog
+base-url:    /devlog/
 permalink:   /:year-:month-:day/:title.html
