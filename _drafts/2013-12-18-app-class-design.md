@@ -4,7 +4,7 @@ layout: post
 published: false
 ---
 
-I would like to share with you how I like to design my classes for iOS apps. 
+I would like to share with you how I like to design the internals of iOS apps. 
 
 ## No Storyboards
 
@@ -23,11 +23,11 @@ The view controllers interpret interactions with the user, and then send message
 
 Further, the view controllers are initialized with references to the logic controllers. So on `viewWillAppear`, they can update their views with the latest state of the world.
 
-Here is some sample code from the AppDelegate:
+Here is what an AppDelegate might look like:
 
-    self.someService = [[DRSomeSerivce alloc] init];
-    self.logicController = [[DRLogicController alloc] initWithSomeService:self.someService];
-    self.mainScreenViewController = [[DRMainScreenViewController alloc] initWithController:self.logicController];
+    self.someService = [[SomeSerivce alloc] init];
+    self.logicController = [[LogicController alloc] initWithSomeService:self.someService];
+    self.mainScreenViewController = [[MainScreenViewController alloc] initWithController:self.logicController];
 
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainScreenViewController]
     self.window.rootViewController = self.navigationController;
@@ -36,9 +36,9 @@ Here is some sample code from the AppDelegate:
 
 And when the `MainScreenViewController` navigates to a new screen, it passes it's reference to the `logicController`
 
-    DRSecondScreenViewController* vc = [[DRSecondScreenViewController alloc] initWithLogicController:self.logicController];
+    SecondScreenViewController* vc = [[SecondScreenViewController alloc] initWithLogicController:self.logicController];
     [self.navigationController pushViewController:vc animated:YES];
 
 Now there could be more than one logic controller, of course. Depending on the complexity of the system.
 
-Oh, and please use more descriptive names than I've picked here.
+Oh, and please names your classes with more descriptive names than the ones I've used here.

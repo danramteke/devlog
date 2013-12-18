@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body, p, div,article,h1,h2 {
+	font-size: 16pt;
   line-height: 135%;
 }
 ol, ul {
@@ -70,6 +71,8 @@ pre .line {
 
 pre {
 	background-color: #ffffff;
+	border-bottom: 1px dotted #444;
+	border-top: 1px dotted #444;
 }
 
 div.post_title {
@@ -132,7 +135,7 @@ footer, .signoff-stripe {
 code {
 	font-family: "Menlo", monospace;
 	font-size: 0.8em;
-	color: #555;
+	color: #444;
 	background-color:#ffffff;
 }
 
