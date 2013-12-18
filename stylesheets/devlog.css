@@ -99,9 +99,16 @@ h1 a {
 	color: #00235D;
 }
 
-h1 {
+h1, h2, h3 {
 	color: #00235D;
+}
+
+h1 {
 	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.3em;
 }
 
 .tagline {
@@ -130,7 +137,7 @@ code {
 }
 
 @media only screen and (min-width : 769px) {
-	.post p:not(.signoff-stripe), .post .gist, h1, .tagline, pre,  div.post_title a, .signoff, footer .owner{
+	.post p:not(.signoff-stripe), .post .gist, h1, h2, h3, .tagline, pre,  div.post_title a, .signoff, footer .owner{
 		width: 768px;
 		margin: 0 auto;
 	}
