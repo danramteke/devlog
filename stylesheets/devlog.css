@@ -139,6 +139,10 @@ code {
 	background-color:#ffffff;
 }
 
+strong {
+	font-weight: 800;
+}
+
 @media only screen and (min-width : 769px) {
 	.post p:not(.signoff-stripe), .post .gist, h1, h2, h3, .tagline, pre,  div.post_title a, .signoff, footer .owner{
 		width: 768px;

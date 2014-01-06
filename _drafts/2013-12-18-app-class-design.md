@@ -26,17 +26,26 @@ Further, the view controllers are initialized with references to the logic contr
 Here is what an AppDelegate might look like:
 
     self.someService = [[SomeSerivce alloc] init];
-    self.logicController = [[LogicController alloc] initWithSomeService:self.someService];
-    self.mainScreenViewController = [[MainScreenViewController alloc] initWithController:self.logicController];
+    self.logicController = 
+        [[LogicController alloc] initWithSomeService:self.someService];
+    
+    self.mainScreenViewController = 
+        [[MainScreenViewController alloc] initWithController:
+            self.logicController];
+    
+    self.navigationController = 
+        [[UINavigationController alloc] initWithRootViewController: 
+            self.mainScreenViewController];
 
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainScreenViewController]
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 
 And when the `MainScreenViewController` navigates to a new screen, it passes it's reference to the `logicController`
 
-    SecondScreenViewController* vc = [[SecondScreenViewController alloc] initWithLogicController:self.logicController];
+    SecondScreenViewController* vc = 
+        [[SecondScreenViewController alloc] initWithLogicController:
+            self.logicController];
     [self.navigationController pushViewController:vc animated:YES];
 
 Now there could be more than one logic controller, of course. Depending on the complexity of the system.
