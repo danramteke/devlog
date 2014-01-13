@@ -119,7 +119,29 @@ h2 {
 	font-size: 1.3em;
 }
 
-footer, .signoff-stripe {
+footer {
+	margin-top: 10px;
+	background-color: #ffffff;
+	color: #5C0023;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 20px;
+	border-bottom: 1px #00235D solid;
+}
+
+.pagination {
+
+	padding-left: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 20px;
+
+}
+
+.signoff-stripe {
 	margin-top: 10px;
 	background-color: #FFDCFF;
 	color: #5C0023;
@@ -129,7 +151,7 @@ footer, .signoff-stripe {
 	margin-left: -20px;
 	margin-right: -20px;
 	margin-bottom: 20px;
-	border-bottom: 1px #00235D solid;
+		
 }
 
 code {
@@ -144,11 +166,11 @@ strong {
 }
 
 @media only screen and (min-width : 769px) {
-	.post p:not(.signoff-stripe), .post .gist, h1, h2, h3, .tagline, pre,  div.post_title a, .signoff, footer .owner{
+	.post p:not(.signoff-stripe), .post .gist, h1, h2, h3, .tagline, pre,  div.post_title a, .signoff, footer .owner, .pagination-container{
 		width: 768px;
 		margin: 0 auto;
 	}
-	div.post_title, p.signoff-stripe, footer { padding-left: 0px; }
+	div.post_title, .pagination-container, .signoff-stripe, footer { padding-left: 0px; }
 	div.post_title a, .signoff {
 			
 		display:block;
